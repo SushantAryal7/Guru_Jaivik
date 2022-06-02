@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
+          integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+
+    <title> Guru_Jaivik_Farmer</title>
+</head>
+<body>
+<div class="container" style="display:flex;">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Product_Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for Product_Name in products_name %}
+
+        <tr>
+            <th scope="row">{{forloop.counter}}</th>
+            <td>{{Product_Name}}</td>
+
+        </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+
+    <table class="table">
+        <thead>
+        <tr>
+
+            <th scope="col">Sell_Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for sell_price in Sell_price %}
+        <tr>
+            <td>{{sell_price}}</td>
+
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+ <table class="table">
+        <thead>
+        <tr>
+
+            <th scope="col">Purchase_Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for purchase_price in Purchase_price %}
+        <tr>
+            <td>{{purchase_price}}</td>
+
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+ <table class="table">
+        <thead>
+        <tr>
+
+            <th scope="col">Profit</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for profit in Profit %}
+        <tr>
+            <td>{{profit}}</td>
+
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+
+</div>
+
+<div class="container" style="display:flex; margin-top:50px;">
+
+ <table class="table" >
+        <thead>
+        <tr>
+
+            <th scope="col">Total_Sale</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>{{total_Sell_price}}</td>
+
+        </tr>
+
+        </tbody>
+    </table>
+
+    <table class="table">
+        <thead>
+        <tr>
+
+            <th scope="col">Total_Purchase</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>{{total_Purchase_price}}</td>
+
+        </tr>
+
+        </tbody>
+    </table>
+
+<table class="table">
+        <thead>
+        <tr>
+
+            <th scope="col">Total_Profit</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>{{total_Profit}}</td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
+
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
