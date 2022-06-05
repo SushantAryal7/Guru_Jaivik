@@ -2,6 +2,7 @@ from django.db import models
 
 
 # Create your models here.
+# Puneet 
 
 class Product(models.Model):
     fields_name = models.CharField(max_length=100)
